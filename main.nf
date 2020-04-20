@@ -37,7 +37,8 @@ def helpMessage() {
 
 	Other input options:
 	  --extension [str]             Naming of sequencing files (default: "/*_R{1,2}_001.fastq.gz"). 
-	                                The prepended "/" is required, also one "*" is required for sample names and "{1,2}" indicates read orientation
+	                                The prepended "/" is required, also one "*" is required for sample names and "{1,2}" indicates read orientation.
+					Not required if "--manifest" is specified.
 	  --multipleSequencingRuns      If samples were sequenced in multiple sequencing runs. Expects one subfolder per sequencing run
 	                                in the folder specified by "--reads" containing sequencing data of the specific run. These folders 
 	                                may not contain underscores. Also, fastQC is skipped because multiple sequencing runs might 
